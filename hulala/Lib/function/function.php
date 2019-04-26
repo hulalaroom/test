@@ -14,3 +14,7 @@ function p($arr){
     echo '<pre>';
 
 }
+
+function  json(){
+
+}
