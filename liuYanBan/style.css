@@ -1,0 +1,120 @@
+.all {
+    width: 800px;
+    margin: 0px auto;
+}
+
+.contentout {
+    width: 1000px;
+    margin: 0 auto;
+
+}
+
+.date {
+    text-align:right;
+}
+.h {
+    text-align:center;
+}
+.add {overflow: hidden;}
+.add .content {
+    width: 98%;
+    padding: 6px;
+    margin: 0px;
+    font-size:20px;
+}
+
+.add .btn {
+    float: right;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+}
+
+.msg {
+    margin: 10px 0px;
+    background: #ccc;
+    padding: 10px;
+    font-size: 18px;
+}
+.msg .info{overflow: hidden;}
+.msg .user {
+    float: left;
+    color: blue;
+}
+
+.msg .num {
+    font-style: italic;
+    font-size: 16px;
+    color: red;
+}
+.msg .time {
+    float: right;
+    color: #999;
+}
+.msg .content {
+    width: 100%;
+}
+.page {
+    text-align:center;
+    font-size: 18px;
+}
+.all {
+     width: 800px;
+     margin: 0px auto;
+ }
+
+.contentout {
+    width: 1000px;
+    margin: 0 auto;
+
+}
+
+.date {
+    text-align:right;
+}
+.h {
+    text-align:center;
+}
+.add {overflow: hidden;}
+.add .content {
+    width: 98%;
+    padding: 6px;
+    margin: 0px;
+    font-size:20px;
+}
+
+.add .btn {
+    float: right;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+}
+
+.msg {
+    margin: 10px 0px;
+    background: #ccc;
+    padding: 10px;
+    font-size: 18px;
+}
+.msg .info{overflow: hidden;}
+.msg .user {
+    float: left;
+    color: blue;
+}
+
+.msg .num {
+    font-style: italic;
+    font-size: 16px;
+    color: red;
+}
+.msg .time {
+    float: right;
+    color: #999;
+}
+.msg .content {
+    width: 100%;
+}
+.page {
+    text-align:center;
+    font-size: 18px;
+}
