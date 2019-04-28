@@ -14,15 +14,15 @@ $db->query("set names UTF8 ");
 $content = $_POST['content'];
 $user = $_POST['user'];
 $ip = $_SERVER["REMOTE_ADDR"];
-$page = empty($_POST['page'])?1:$_POST['page'];
-$limit = ($page-1)*5;
-$page = $page*5;
+//$page = empty($_POST['page'])?1:$_POST['page'];
+//$limit = ($page-1)*5;
+//$page = $page*5;
 $time = time();
 $sql = "insert into msg (content , user , intime ,ip ) values ('{$user}' ,'{$content}' ,'{$time}' ,'{$ip}') ";
 $a = $db->query($sql);
 
 //查數據
-$sql2 =" select * from `msg` group by id desc limit '{$limit}','{$page}'";
+$sql2 =" select * from `msg` group by id desc ";
 
 $redata = $db->query($sql2);
 $result = mysqli_fetch_all($redata,1);

@@ -16,8 +16,7 @@ $limit = ($page-1)*5;
 $page = $page*5;
 
 //查數據
-$sql2 =" select * from `msg` group by id desc limit {$limit},{$page}";
-var_dump($sql2);
+$sql2 =" select * from `msg` group by id desc ";
 $redata = $db->query($sql2);
 $result = mysqli_fetch_all($redata,1);
 foreach ($result as $k=> $v){

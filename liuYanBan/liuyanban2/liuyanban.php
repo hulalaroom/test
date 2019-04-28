@@ -10,6 +10,8 @@ $conType = $_POST['cType'];
 $ip = $_SERVER["REMOTE_ADDR"];
 $user = $_POST['user'];
 $msg = $_POST['msg'];
+var_dump($user);
+die;
 
 //初始化数据库 建表
 $con = new mysqli('localhost','root','root','test');
@@ -29,13 +31,13 @@ if($conType == 2){
 ";
 }elseif($conType ==1 ){
     $time  = time();
-    $sql = "insert into (ip , user , msg , uptime) values ({$ip},{$user},{$msg},{$time})";
+    $sql = "insert into mymsg (ip , user , msg , uptime) values ('{$ip}','{$user}','{$msg}','{$time}')";
 }
- $con->query($sql);
+ $a = $con->query($sql);
 //查询数据库
-$mysql = "select * from mymsg order by id desc limit 0,5";
+$mysql = "select * from mymsg order by id desc ";
 $data =$con->query($mysql);
 $result = mysqli_fetch_all($data);
-echo  $result;
+echo  json_encode($result);
 $con->close();
 
