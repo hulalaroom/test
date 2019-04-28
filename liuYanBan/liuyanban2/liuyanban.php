@@ -29,6 +29,16 @@ if($conType == 2){
        primary key (`id`)  
        )  DEFAULT AUTO_INCREMENT=1 CHARSET=utf8
 ";
+    $sql2121= "CREATE TABLE `msg` (
+	`id` INT (10) NOT NULL auto_increment,
+	`content` VARCHAR (100) NOT NULL,
+	`qq` CHAR (20),
+	`user` VARCHAR (40) NOT NULL,
+	`intime` VARCHAR (40) NOT NULL,
+	`ip` VARCHAR (20) NOT NULL,
+	PRIMARY KEY (`id`),
+	UNIQUE KEY `qq` (`qq`)
+) ENGINE = INNODB AUTO_INCREMENT = 1 CHARSET = utf8;";
 }elseif($conType ==1 ){
     $time  = time();
     $sql = "insert into mymsg (ip , user , msg , uptime) values ('{$ip}','{$user}','{$msg}','{$time}')";

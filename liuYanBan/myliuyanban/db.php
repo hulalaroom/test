@@ -22,8 +22,7 @@ $sql = "insert into msg (content , user , intime ,ip ) values ('{$user}' ,'{$con
 $a = $db->query($sql);
 
 //查數據
-$sql2 =" select * from `msg` group by id desc ";
-
+$sql2 =" select * from `msg` order by id desc ";
 $redata = $db->query($sql2);
 $result = mysqli_fetch_all($redata,1);
 foreach ($result as $k=>$v){
